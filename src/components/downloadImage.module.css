@@ -1,0 +1,48 @@
+.main {
+  width: 25rem;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 1px 3px 20px -10px rgba(163, 163, 163, 0.532);
+}
+
+.heading_sec {
+  width: 100%;
+  text-align: start;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  margin: 0px;
+  font-size: 18px;
+}
+
+.preview_container {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #d4f0ff;
+  border-radius: 10px;
+  border: 1px solid #98dbff;
+  margin-bottom: 2rem;
+  height: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.previewIcon {
+  width: 5rem;
+}
+
+.imagePreview {
+  width: 100%;
+}
+
+.btn_sec {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}

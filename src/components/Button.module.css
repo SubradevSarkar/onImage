@@ -1,0 +1,15 @@
+.btn_main {
+  /* position: ; */
+  cursor: pointer;
+  border-radius: 1px;
+  border: 2px solid #000;
+  width: fit-content;
+  padding: 8px 10px;
+  box-shadow: -5px 5px 0px rgba(0, 0, 0);
+  font-weight: 800;
+}
+
+.btn_main:hover {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0);
+  transition: 0.06s;
+}
