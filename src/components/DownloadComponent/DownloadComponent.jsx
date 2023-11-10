@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import css from "./downloadImage.module.css";
-import useImageContext from "../hook/image-context-hook";
-import previewImage from "../assets/previewImage.svg";
-import Button from "./Button";
-import AlertModal from "./alertModal";
+import css from "./DownloadComponent.module.css";
+import { useImageContext } from "../../context/ImageContext";
+import previewImage from "../../assets/previewImage.svg";
+import { AlertModal, Button } from "../index";
 
-const downloadImage = () => {
+const DownloadComponent = () => {
   const { newImage, imagePath } = useImageContext();
   const [showAlertModal, setShowAlertModal] = useState(false);
   const [alertMessage, setAlertMessage] = useState("");
@@ -49,4 +48,4 @@ const downloadImage = () => {
   );
 };
 
-export default downloadImage;
+export default DownloadComponent;

@@ -1,6 +1,8 @@
-import React, { createContext, useState } from "react";
-const ImageContext = createContext();
-const Provider = ({ children }) => {
+import { createContext, useState, useContext } from "react";
+
+export const ImageContext = createContext();
+
+export const ImageProvider = ({ children }) => {
   const [imagePath, setImagePath] = useState("");
   const [newImage, setNewImage] = useState("");
 
@@ -18,6 +20,6 @@ const Provider = ({ children }) => {
   );
 };
 
-export { Provider };
-
-export default ImageContext;
+export const useImageContext = () => {
+  return useContext(ImageContext);
+};

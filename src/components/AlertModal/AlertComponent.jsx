@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import css from "./alertModel.module.css";
+import css from "./AlertComponent.module.css";
 
-const alertModal = ({ message, show }) => {
+const AlertModal = ({ message, show }) => {
   return (
     <div>
       <div className={css.wrapper} onClick={() => show(false)}></div>
@@ -13,4 +13,4 @@ const alertModal = ({ message, show }) => {
   );
 };
 
-export default alertModal;
+export default AlertModal;

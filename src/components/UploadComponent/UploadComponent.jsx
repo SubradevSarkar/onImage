@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import css from "./uploadImage.module.css";
-import useImageContext from "../hook/image-context-hook";
-import Button from "./Button";
-import uploadFile from "../assets/uploadFile.svg";
-import AlertModal from "./alertModal";
+import css from "./UploadComponent.module.css";
+import { useImageContext } from "../../context/ImageContext";
+import uploadFile from "../../assets/uploadFile.svg";
+import { AlertModal, Button } from "../index";
 
-const uploadImage = () => {
+const UploadComponent = () => {
   const { setImagePath, setNewImage, imagePath } = useImageContext();
   const [text, setText] = useState("");
   const [isDragging, setIsDragging] = useState(false);
@@ -135,4 +134,4 @@ const uploadImage = () => {
   );
 };
 
-export default uploadImage;
+export default UploadComponent;
