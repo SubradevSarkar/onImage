@@ -1,6 +1,6 @@
 import { createContext, useState, useContext } from "react";
 
-export const ImageContext = createContext();
+const ImageContext = createContext();
 
 export const ImageProvider = ({ children }) => {
   const [imagePath, setImagePath] = useState("");
